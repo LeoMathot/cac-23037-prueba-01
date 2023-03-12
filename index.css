@@ -67,6 +67,17 @@ header {
 }
 
 footer {
-    height: 100px;
     background-color: var(--azul-4);
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin-bottom: 20px;
+}
+
+footer ul {
+    width: fit-content;
+    margin: 20px auto;
+    list-style: none;
 }
