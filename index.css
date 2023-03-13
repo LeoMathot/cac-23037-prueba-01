@@ -5,13 +5,13 @@
 }
 
 :root {
-    --fondo-suave: #70f070;
-    --fondo-fuerte: #00c000;
-    --fondo-oscuro: #509050;
-    --fondo-claro: #a0d0a0;
+    --fondo-suave: #70ff70;
+    --fondo-fuerte: #00d000;
+    --fondo-oscuro: #40a040;
+    --fondo-claro: #b0f0b0;
     --fondo-blanco: #f9f9f9;
-    --texto-blanco: #f9f9f9;
     --texto-negro: #000000;
+    --texto-blanco: #f9f9f9;
     --texto-color: #009000;
 }
 
@@ -30,43 +30,48 @@ header {
     display: flex;
     position: sticky;
     top: 0;
-    color:var(--texto-blanco);
-    height: fit-content;
-    width: 100%;
     padding: 2px 10px;
-    background-color: var(--fondo-fuerte);
+    background-color: var(--fondo-suave);
 }
 
 .logo {
     background-color: var(--fondo-blanco);
     color: var(--texto-negro);
     width: fit-content;
-    height: fit-content;
-    padding: 2px 20px;
+    height: 24px;
+    padding: 5px 5px 0 30px;
     margin: auto 0;
-    border-radius: 0 20px 0 20px;
 }
 
 .nav-list {
+    list-style: none;
     padding: 2px;
     width: fit-content;
     display: flex;
-    list-style: none;
     margin-left: auto;
 }
 
-@media (max-width:500px) {
+@media (max-width: 500px) {
+    .nav {
+        display: block;
+        top: -30px;
+    }
+    .logo {
+        margin: 0;
+    }
     .nav-list {
         margin-right: auto;
     }
 }
 
 .nav-list li {
+    color:var(--texto-color);
     padding: 5px 5px 1px 5px;
     margin: 0 2px;
 }
 
 .nav-list li:hover {
+    color:var(--texto-negro);
     position: relative;
     top: -2px;
     cursor: pointer;
@@ -74,7 +79,7 @@ header {
 
 main {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto 80px auto;
     padding: 0 20px;
 }
 
@@ -88,8 +93,54 @@ section {
     margin: 20px 0;
 }
 
-section h2 {
+.section-1 p, .section-2 p {
     color: var(--texto-color);
+    margin-top: 5px;
+}
+
+.section-3, .section-4, .section-5 {
+    display: flex;
+}
+
+.bloque {
+    background-color: var(--fondo-fuerte);
+    color: var(--texto-blanco);
+    min-width: 30%;
+    padding: 10px;
+}
+
+.bloque-izquierda {
+    text-align: right;
+    margin-right: 10px;
+}
+
+.texto-3, .texto-4 {
+    text-align: left;
+}
+
+.bloque-derecha {
+    text-align: left;
+    margin-left: 10px;
+}
+
+.texto-5 {
+    text-align: right;
+}
+
+@media (max-width: 500px) {
+    .section-3, .section-4 {
+        display: block;
+    }
+    .bloque{
+        margin: 10px 0;
+        text-align: left;
+    }
+    .section-5 {
+        flex-direction: column-reverse;
+    }
+    .texto-5 {
+        text-align: left;
+    } 
 }
 
 footer {
