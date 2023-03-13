@@ -79,6 +79,7 @@ main {
 }
 
 section {
+    background-color: var(--azul-2);
     margin: 20px 0;
 }
 
