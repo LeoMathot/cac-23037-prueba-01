@@ -8,12 +8,26 @@
     --fondo-suave: #70ff70;
     --fondo-fuerte: #00d000;
     --fondo-oscuro: #40a040;
-    --fondo-claro: #b0f0b0;
+    --fondo-claro: #d8ffd8;
     --fondo-blanco: #f9f9f9;
     --texto-negro: #000000;
     --texto-blanco: #f9f9f9;
     --texto-color: #009000;
 }
+
+::-moz-selection { /* Code for Firefox */
+    color: var(--fondo-fuerte);
+    background: black;
+  }
+  
+  ::selection {
+    color: var(--fondo-fuerte);
+    background: black;
+  }
+
+html {
+    scroll-behavior: smooth;
+  }
 
 body {
     background-color: var(--fondo-blanco);
@@ -90,15 +104,16 @@ main {
 }
 
 section {
-    margin: 20px 0;
+    /*background-color: var(--fondo-claro); /* color temporal */
+    margin: 30px 0;
 }
 
-.section-1 p, .section-2 p {
+.titulo-parrafo p {
     color: var(--texto-color);
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
-.section-3, .section-4, .section-5 {
+.bloque-parrafo, .parrafo-bloque {
     display: flex;
 }
 
@@ -109,38 +124,50 @@ section {
     padding: 10px;
 }
 
-.bloque-izquierda {
-    text-align: right;
-    margin-right: 10px;
+.bloque-parrafo .texto p, .parrafo-bloque .texto p {
+    margin-bottom: 10px;
 }
 
-.texto-3, .texto-4 {
-    text-align: left;
+.bloque-parrafo .texto p:last-of-type, .parrafo-bloque .texto p:last-of-type {
+    margin-bottom: 0;
 }
 
-.bloque-derecha {
-    text-align: left;
+.bloque-parrafo .texto {
     margin-left: 10px;
+    text-align: left;
 }
 
-.texto-5 {
+.parrafo-bloque .texto {
+    margin-right: 10px;
     text-align: right;
+}
+
+.bloque-parrafo .bloque {
+    text-align: right;
+}
+
+.parrafo-bloque .bloque {
+    text-align: left;
 }
 
 @media (max-width: 500px) {
-    .section-3, .section-4 {
-        display: block;
+    .bloque-parrafo {
+        flex-direction: column;
     }
-    .bloque{
-        margin: 10px 0;
-        text-align: left;
-    }
-    .section-5 {
+    .parrafo-bloque {
         flex-direction: column-reverse;
     }
-    .texto-5 {
+    .bloque-parrafo .bloque {
         text-align: left;
-    } 
+    }
+    .bloque-parrafo .texto p, .parrafo-bloque .texto p {
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    .parrafo-bloque .texto, .bloque-parrafo .texto {
+        margin: 0;
+        text-align: left;
+    }
 }
 
 footer {
