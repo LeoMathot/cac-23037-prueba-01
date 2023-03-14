@@ -67,11 +67,11 @@ header {
 
 @media (max-width: 500px) {
     .nav {
-        display: block;
-        top: -30px;
+        flex-direction: column;
+        top: -45px;
     }
     .logo {
-        margin: 0;
+        margin: 0 0 20px 0;
     }
     .nav-list {
         margin-right: auto;
