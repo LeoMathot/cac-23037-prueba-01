@@ -81,14 +81,14 @@ header {
 }
 
 .nav-list li {
-    color:var(--texto-color);
+    color:var(--texto-negro);
     padding: 5px 5px 1px 5px;
     margin: 0 2px;
 }
 
 .nav-list li:hover {
-    color:var(--texto-negro);
-    position: relative;
+    background-color: var(--fondo-fuerte);
+    color:var(--texto-blanco);
     top: -2px;
     cursor: pointer;
 }
