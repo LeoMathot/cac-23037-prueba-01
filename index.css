@@ -18,13 +18,13 @@
 }
 
 ::-moz-selection { /* Code for Firefox */
-    color: var(--fondo-fuerte);
-    background: black;
+    color: white;
+    background: green;
   }
   
   ::selection {
-    color: var(--fondo-fuerte);
-    background: black;
+    color: white;
+    background: green
   }
 
 html {
@@ -89,7 +89,6 @@ header {
 .nav-list li:hover {
     background-color: var(--fondo-fuerte);
     color:var(--texto-blanco);
-    top: -2px;
     cursor: pointer;
 }
 
