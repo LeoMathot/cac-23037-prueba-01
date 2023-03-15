@@ -9,10 +9,12 @@
     --fondo-fuerte: #00d000;
     --fondo-oscuro: #40a040;
     --fondo-claro: #d8ffd8;
+    --fondo-negro: #101010;
     --fondo-blanco: #f9f9f9;
     --texto-negro: #000000;
     --texto-blanco: #f9f9f9;
-    --texto-color: #009000;
+    --texto-color-oscuro: #009000;
+    --texto-color-fuerte: #00d000;
 }
 
 ::-moz-selection { /* Code for Firefox */
@@ -43,7 +45,7 @@ header {
 .nav {
     display: flex;
     position: sticky;
-    top: 0;
+    top: 0px;
     padding: 2px 10px;
     background-color: var(--fondo-suave);
 }
@@ -91,25 +93,38 @@ header {
     cursor: pointer;
 }
 
-main {
-    max-width: 800px;
-    margin: 0 auto 80px auto;
-    padding: 0 20px;
+.banner {
+    padding: 30px 0;
+    font-size: 7em;
+    text-align: center;
+}
+
+.banner-1 {
+    background-color: var(--fondo-suave);
+    color: var(--texto-negro);
+}
+
+article {
+    padding: 20px 20px;
 }
 
 @media (max-width: 500px) {
-    main {
-    padding: 0 5px;
+    article {
+    padding: 20px 5px;
     }
 }
 
+.article-1 {
+    background-color: var(--fondo-blanco);
+}
+
 section {
-    /*background-color: var(--fondo-claro); /* color temporal */
-    margin: 30px 0;
+    max-width: 600px;
+    margin: 20px auto;
 }
 
 .titulo-parrafo p {
-    color: var(--texto-color);
+    color: var(--texto-color-oscuro);
     margin-top: 10px;
 }
 
@@ -170,6 +185,48 @@ section {
     }
 }
 
+.banner-2 {
+    background-color: var(--fondo-negro);
+    color: var(--texto-color-fuerte);
+}
+
+.article-2 {
+    background-color: var(--fondo-suave);
+}
+
+.article-2 .titulo-parrafo {
+    background-color: var(--fondo-claro);
+    padding: 5px;
+}
+
+.article-2 .bloque {
+    background-color: var(--fondo-negro);
+    color: var(--fondo-suave);
+}
+
+.banner-3 {
+    background-color: var(--fondo-fuerte);
+    color: var(--texto-blanco);
+}
+
+.article-3 {
+    background-color: var(--fondo-negro);
+    color: var(--texto-blanco);
+}
+
+.article-3 .titulo-parrafo p {
+    color: var(--texto-color-fuerte);
+}
+
+.article-3 .bloque-parrafo, .article-3 .parrafo-bloque {
+    color: var(--fondo-blanco);
+}
+
+.article-3 .bloque {
+    background-color: var(--fondo-claro);
+    color: var(--texto-color-oscuro);
+}
+
 footer {
     background-color: var(--fondo-oscuro);
     text-align: center;
@@ -185,12 +242,4 @@ footer ul {
     width: fit-content;
     margin: 20px auto;
     list-style: none;
-}
-
-.temp {
-    background-color: var(--fondo-fuerte);
-    color: var(--texto-blanco);
-    padding: 100px 0;
-    font-size: 7em;
-    text-align: center;
 }
