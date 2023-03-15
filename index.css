@@ -37,7 +37,7 @@ body {
 header {
     background-color: var(--fondo-suave);
     padding: 20px;
-    min-height: 200px;
+    min-height: 50vh;
 }
 
 .nav {
@@ -185,4 +185,12 @@ footer ul {
     width: fit-content;
     margin: 20px auto;
     list-style: none;
+}
+
+.temp {
+    background-color: var(--fondo-fuerte);
+    color: var(--texto-blanco);
+    padding: 100px 0;
+    font-size: 7em;
+    text-align: center;
 }
