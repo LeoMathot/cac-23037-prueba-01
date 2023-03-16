@@ -12,7 +12,7 @@
     --fondo-blanco: #f9f9f9;
     --texto-negro: #000000;
     --texto-blanco: #f9f9f9;
-    --texto-color-oscuro: #009000;
+    --texto-color-oscuro: #007000;
     --texto-color-fuerte: #00d000;
 }
 
@@ -270,6 +270,19 @@ section {
 
 .article-4 {
     background-color: var(--fondo-suave);
+}
+
+.article-4 .titulo-parrafo h2 {
+    color: var(--texto-blanco);
+    background-color: var(--fondo-fuerte);
+    padding: 10px;
+    width: fit-content;
+}
+
+@media (max-width: 500px) {
+    .article-4 .titulo-parrafo h2 {
+        width: 100%;
+    }
 }
 
 footer {
