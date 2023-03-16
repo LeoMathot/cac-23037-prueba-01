@@ -46,6 +46,9 @@ header {
 }
 
 .text-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
     text-align: right;
     padding: 0 10px;
 }
@@ -77,7 +80,7 @@ header {
     }
     .text-cont {
         text-align: left;
-        padding: 0 0 20px 0;
+        padding: 20px 0 10px 0;
     }
     .img-cont {
         width: 100%;
