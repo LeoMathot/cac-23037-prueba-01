@@ -33,6 +33,7 @@ html {
 body {
     background-color: var(--fondo-blanco);
     font-family: 'Cabin', sans-serif;
+    font-size: 1.1em;
 }
 
 header {
@@ -85,7 +86,7 @@ header {
     display: flex;
     position: sticky;
     top: -2px;
-    padding: 5px 15px 2px 15px;
+    padding: 15px 15px 2px 15px;
     background-color: var(--fondo-suave);
 }
 
