@@ -286,6 +286,35 @@ section {
     }
 }
 
+form {
+    background-color: var(--fondo-fuerte);
+    padding: 10px;
+    width:fit-content;
+    margin: 60px auto 0 auto;
+}
+
+form p {
+    margin:5px;
+}
+
+form input {
+    border: none;
+}
+
+form button {
+    display: block;
+    margin: 10px auto 0 auto;
+    border: none;
+    padding: 5px;
+    background-color: var(--fondo-negro);
+    color: var(--texto-blanco);
+}
+
+form button:hover {
+    background-color: var(--fondo-blanco);
+    color: var(--texto-color-oscuro);
+}
+
 footer {
     background-color: var(--fondo-oscuro);
     text-align: center;
