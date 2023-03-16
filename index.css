@@ -7,7 +7,7 @@
 :root {
     --fondo-suave: #90ff90;
     --fondo-fuerte: #00d000;
-    --fondo-oscuro: #40a040;
+    --fondo-oscuro: #40c040;
     --fondo-negro: #101010;
     --fondo-blanco: #f9f9f9;
     --texto-negro: #000000;
@@ -120,7 +120,6 @@ header {
     }
 }
 
-
 nav a {
     color:var(--texto-negro);
     padding: 5px;
@@ -156,17 +155,13 @@ article {
     }
 }
 
-.article-1 {
-    background-color: var(--fondo-blanco);
-}
-
 section {
     max-width: 800px;
     margin: 20px auto;
 }
 
 .titulo-parrafo p {
-    color: var(--texto-color-oscuro);
+    color: var(--texto-blanco);
     margin-top: 10px;
 }
 
@@ -227,6 +222,18 @@ section {
     }
 }
 
+.article-1 {
+    background-color: var(--fondo-negro);
+}
+
+.article-1 .titulo-parrafo h2 {
+    color: var(--texto-color-fuerte);
+}
+
+.article-1 .parrafo-bloque p, .article-1 .bloque-parrafo p {
+    color: var(--fondo-suave);
+}
+
 .banner-2 {
     background-color: var(--fondo-negro);
     color: var(--texto-color-fuerte);
@@ -235,6 +242,10 @@ section {
 .article-2 {
     background-color: var(--fondo-suave);
     color: var(--texto-negro);
+}
+
+.article-2 .titulo-parrafo p {
+    color: var(--texto-color-oscuro);
 }
 
 .article-2 .bloque {
@@ -266,7 +277,8 @@ section {
 }
 
 .banner-4 {
-    color: var(--texto-color-oscuro);
+    background-color: var(--fondo-oscuro);
+    color: var(--fondo-suave);
 }
 
 .article-4 {
@@ -280,6 +292,10 @@ section {
     width: fit-content;
 }
 
+.article-4 .titulo-parrafo p {
+    color: var(--texto-negro);
+}
+
 @media (max-width: 500px) {
     .article-4 .titulo-parrafo h2 {
         width: 100%;
@@ -291,6 +307,7 @@ form {
     padding: 10px;
     width:fit-content;
     margin: 60px auto 0 auto;
+    min-width: 60%;
     max-width: 80%;
 }
 
@@ -318,6 +335,14 @@ form button {
 form button:hover {
     background-color: var(--fondo-blanco);
     color: var(--texto-color-oscuro);
+}
+
+@media (max-width: 500px) {
+    form {
+        padding: 5px;
+        min-width: 90%;
+        max-width: 100%;
+    }
 }
 
 footer {
