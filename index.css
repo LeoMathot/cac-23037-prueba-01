@@ -233,11 +233,6 @@ section {
     background-color: var(--fondo-suave);
 }
 
-.article-2 .titulo-parrafo {
-    background-color: var(--fondo-blanco);
-    padding: 5px;
-}
-
 .article-2 .bloque {
     background-color: var(--fondo-negro);
     color: var(--fondo-suave);
