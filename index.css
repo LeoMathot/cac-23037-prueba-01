@@ -237,6 +237,7 @@ section {
 .banner-2 {
     background-color: var(--fondo-negro);
     color: var(--texto-color-fuerte);
+    border-top: 5px solid var(--fondo-suave);
 }
 
 .article-2 {
