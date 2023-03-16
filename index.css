@@ -35,6 +35,10 @@ body {
     font-family: 'Cabin', sans-serif;
 }
 
+p {
+    font-size: 1.2;
+}
+
 header {
     display: flex;
     justify-content: center;
