@@ -291,14 +291,19 @@ form {
     padding: 10px;
     width:fit-content;
     margin: 60px auto 0 auto;
+    max-width: 80%;
 }
 
 form p {
     margin:5px;
 }
 
-form input {
+form input, form textarea {
+    background-color: var(--fondo-suave);
     border: none;
+    width: 100%;
+    max-width: 100%;
+    font-family: 'Cabin', sans-serif;
 }
 
 form button {
