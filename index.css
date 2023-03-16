@@ -5,10 +5,9 @@
 }
 
 :root {
-    --fondo-suave: #70ff70;
+    --fondo-suave: #90ff90;
     --fondo-fuerte: #00d000;
     --fondo-oscuro: #40a040;
-    --fondo-claro: #d8ffd8;
     --fondo-negro: #101010;
     --fondo-blanco: #f9f9f9;
     --texto-negro: #000000;
@@ -120,15 +119,18 @@ header {
     }
 }
 
-.nav-list li {
+
+nav a {
     color:var(--texto-negro);
-    padding: 5px 5px 1px 5px;
-    margin: 0 2px;
+    padding: 5px;
+    margin: 2px;
+    text-decoration: none;
+    color: var(--texto-negro);
 }
 
-.nav-list li:hover {
+a:hover {
+    color: var(--texto-blanco);
     background-color: var(--fondo-fuerte);
-    color:var(--texto-blanco);
     cursor: pointer;
 }
 
@@ -231,11 +233,12 @@ section {
 
 .article-2 {
     background-color: var(--fondo-suave);
+    color: var(--texto-negro);
 }
 
 .article-2 .bloque {
     background-color: var(--fondo-negro);
-    color: var(--fondo-suave);
+    color: var(--texto-color-fuerte);
 }
 
 .banner-3 {
@@ -257,8 +260,16 @@ section {
 }
 
 .article-3 .bloque {
-    background-color: var(--fondo-claro);
+    background-color: var(--fondo-suave);
+    color: var(--texto-negro);
+}
+
+.banner-4 {
     color: var(--texto-color-oscuro);
+}
+
+.article-4 {
+    background-color: var(--fondo-suave);
 }
 
 footer {
