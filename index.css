@@ -91,6 +91,7 @@ header {
     display: flex;
     position: sticky;
     top: -2px;
+    z-index: 10;
     padding: 15px 15px 2px 15px;
     background-color: var(--fondo-suave);
 }
@@ -378,9 +379,9 @@ form button:hover {
 
 footer {
     background-color: var(--fondo-oscuro);
+    color: var(--texto-negro);
     text-align: center;
     padding: 40px;
-    color: var(--texto-blanco);
 }
 
 footer p {
@@ -388,6 +389,7 @@ footer p {
 }
 
 footer ul {
+    color: var(--texto-color-oscuro);
     width: fit-content;
     margin: 20px auto;
     list-style: none;
