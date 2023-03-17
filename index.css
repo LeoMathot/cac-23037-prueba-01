@@ -307,7 +307,8 @@ section {
 
 form {
     font-size: 1rem;
-    background-color: var(--fondo-fuerte);
+    background-color: var(--fondo-negro);
+    color: var(--texto-blanco);
     padding: 20px;
     margin: 60px auto 0 auto;
     max-width: 700px;
@@ -335,6 +336,13 @@ form input:focus, form textarea:focus, form select:focus {
 form input[type="radio"], form input[type="checkbox"] {
     width: 20px;
     margin-left: 20px;
+    opacity: 0.7;
+    accent-color: var(--fondo-fuerte);
+}
+
+form input[type="radio"]:checked, form input[type="checkbox"]:checked {
+    opacity: 1;
+    filter: saturate(200%);
 }
 
 input[type="text"], input[type="email"], input[type="number"], input[type="date"], textarea, select, label {
@@ -352,13 +360,13 @@ form button {
     margin: 30px auto 0 auto;
     background-color: var(--fondo-negro);
     color: var(--texto-blanco);
-    border: 2px solid var(--fondo-negro);
+    border: 2px solid var(--fondo-fuerte);
     padding: 5px;
 }
 
 form button:hover {
-    background-color: var(--fondo-blanco);
-    color: var(--texto-color-oscuro);
+    background-color: var(--fondo-fuerte);
+    color: var(--texto-negro);
 }
 
 @media (max-width: 500px) {
