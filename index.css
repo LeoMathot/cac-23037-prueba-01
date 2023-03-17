@@ -389,7 +389,7 @@ footer p {
 }
 
 footer ul {
-    color: var(--texto-color-oscuro);
+    color: var(--texto-color-suave);
     width: fit-content;
     margin: 20px auto;
     list-style: none;
