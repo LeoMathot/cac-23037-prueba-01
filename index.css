@@ -306,33 +306,54 @@ section {
 }
 
 form {
+    font-size: 1rem;
     background-color: var(--fondo-fuerte);
-    padding: 10px;
-    width:fit-content;
+    padding: 20px;
     margin: 60px auto 0 auto;
-    min-width: 60%;
-    max-width: 80%;
+    max-width: 700px;
 }
 
-form p {
-    margin:5px;
-}
-
-form input, form textarea {
+form input, form textarea, form select {
     background-color: var(--fondo-suave);
     border: none;
-    width: 100%;
-    max-width: 100%;
+    outline: none;
     font-family: 'Cabin', sans-serif;
+    width: 100%;
+    margin: 2px 0;
+    padding: 3px;
+    transition: width 0.4s ease-in-out;
+}
+
+form textarea {
+    min-height: 100px;
+}
+
+form input:focus, form textarea:focus, form select:focus {
+    padding: 10px 3px;
+  }
+
+form input[type="radio"], form input[type="checkbox"] {
+    width: 20px;
+    margin-left: 20px;
+}
+
+input[type="text"], input[type="email"], input[type="number"], input[type="date"], textarea, select, label {
+    display: block;
+}
+
+.question {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 10px 0 5px 0;
 }
 
 form button {
     display: block;
-    margin: 10px auto 0 auto;
-    border: none;
-    padding: 5px;
+    margin: 30px auto 0 auto;
     background-color: var(--fondo-negro);
     color: var(--texto-blanco);
+    border: 2px solid var(--fondo-negro);
+    padding: 5px;
 }
 
 form button:hover {
