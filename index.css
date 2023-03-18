@@ -33,19 +33,20 @@ html {
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 15px;
 }
   
 ::-webkit-scrollbar-track {
     background: var(--fondo-negro);
+    border-left: 2px solid black;
 }
   
 ::-webkit-scrollbar-thumb {
-    background: var(--fondo-suave);
+    background: #707070;
 }
   
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--fondo-fuerte);
+    background: #a0a0a0;
 }
 
 body {
