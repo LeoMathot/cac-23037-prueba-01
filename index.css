@@ -16,16 +16,19 @@
     --texto-color-fuerte: #00d000;
     --texto-negro: #000000;
     --texto-blanco: #f9f9f9;
+
+    --selection-background: green;
+    --selection-color: white;
 }
 
 ::-moz-selection { /* Code for Firefox */
-    color: white;
-    background: green;
+    background: var(--selection-background);
+    color: var(--selection-color);
 }
   
 ::selection {
-    color: white;
-    background: green
+    background: var(--selection-background);
+    color: var(--selection-color);
 }
 
 html {
