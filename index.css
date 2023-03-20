@@ -65,7 +65,7 @@ header {
 .img-cont {
     background-color: #404040;
     color: var(--texto-blanco);
-    height: 40vh;
+    height: 50vh;
 }
 
 .img-cont img {
@@ -86,7 +86,7 @@ header {
 
 @media (max-width: 500px) {
     .img-cont {
-        height: 50vh;
+        height: 60vh;
     }
 }
 
