@@ -132,7 +132,6 @@ nav a {
     padding: 5px;
     margin: 0 2px;
     text-decoration: none;
-    color: var(--texto-negro);
 }
 
 nav a:hover {
