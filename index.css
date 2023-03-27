@@ -98,25 +98,47 @@ header {
     position: sticky;
     top: -2px;
     z-index: 10;
-    padding: 15px 15px 5px 15px;
+    padding: 7px 15px 5px 15px;
     background-color: var(--fondo-suave);
 }
 
 .logo {
-    background-color: var(--fondo-blanco);
-    color: var(--texto-negro);
+    background-color: var(--fondo-negro);
+    color: var(--texto-blanco);
     width: fit-content;
-    height: 24px;
-    padding: 5px 5px 0 30px;
-    margin: auto 0;
+    padding: 5px 5px 5px 30px;
+}
+
+.logo i {
+    color: var(--fondo-fuerte);
+    padding: 3px;
+    margin: 0 10px;
+}
+
+.logo i:hover {
+    color: var(--fondo-blanco);
 }
 
 .nav-list {
     list-style: none;
-    padding: 2px;
     width: fit-content;
     display: flex;
     margin-left: auto;
+    align-items: center;
+}
+
+nav a {
+    color:var(--texto-negro);
+    padding: 5px;
+    margin: 0 2px;
+    text-decoration: none;
+    color: var(--texto-negro);
+}
+
+nav a:hover {
+    color: var(--texto-blanco);
+    background-color: var(--fondo-fuerte);
+    cursor: pointer;
 }
 
 @media (max-width: 500px) {
@@ -130,20 +152,6 @@ header {
     .nav-list {
         margin-right: auto;
     }
-}
-
-nav a {
-    color:var(--texto-negro);
-    padding: 5px;
-    margin: 2px;
-    text-decoration: none;
-    color: var(--texto-negro);
-}
-
-a:hover {
-    color: var(--texto-blanco);
-    background-color: var(--fondo-fuerte);
-    cursor: pointer;
 }
 
 .banner {
@@ -387,16 +395,22 @@ footer {
     background-color: var(--fondo-oscuro);
     color: var(--texto-negro);
     text-align: center;
-    padding: 40px;
+    padding: 40px 40px 60px 40px;
 }
 
 footer p {
     margin-bottom: 20px;
 }
 
-footer ul {
-    color: var(--texto-color-suave);
-    width: fit-content;
-    margin: 20px auto;
+footer .grid {
+    color: var(--texto-blanco);
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+footer .grid i {
+    margin: 10px;
 }
