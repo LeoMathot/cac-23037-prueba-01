@@ -5,20 +5,20 @@
 }
 
 :root {
-    --fondo-suave: #90ff90;
-    --fondo-fuerte: #00d000;
+    --fondo-suave: #7aff7a;
+    --fondo-fuerte: #39d639;
     --fondo-oscuro: #40c040;
     --fondo-negro: #202020;
     --fondo-blanco: #f9f9f9;
 
     --texto-color-suave: #90ff90;
     --texto-color-oscuro: #007000;
-    --texto-color-fuerte: #00d000;
+    --texto-color-fuerte: #1ed41e;
     --texto-negro: #000000;
     --texto-blanco: #f9f9f9;
 
     --selection-background: green;
-    --selection-color: white;
+    --selection-color: rgb(231, 231, 231);
 }
 
 ::-moz-selection { /* Code for Firefox */
@@ -60,12 +60,11 @@ body {
 
 header {
     background-color: #000000;
-    display: ;
 }
 
 .img-cont {
     background-color: #404040;
-    color: var(--texto-blanco);
+    width: 100%;
     max-width: 700px;
     height: 50vh;
     margin: 0 auto;
@@ -82,9 +81,20 @@ header {
     padding: 20px;
 }
 
+.cac {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
 .big {
-    font-size: 1.5em;
-    color: var(--texto-color-fuerte);
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 2.5rem;
+    font-weight: bold;
+    background-image: linear-gradient(to top, var(--texto-color-fuerte) 30%, var(--texto-color-oscuro));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 @media (max-width: 500px) {
@@ -115,7 +125,7 @@ header {
     margin: 0 10px;
 }
 
-.logo i:hover {
+.logo:hover i {
     color: var(--fondo-blanco);
 }
 
@@ -128,11 +138,11 @@ header {
 }
 
 nav a {
+    display: inline-block;
     color:var(--texto-negro);
     padding: 5px;
     margin: 0 2px;
     text-decoration: none;
-    color: var(--texto-negro);
 }
 
 nav a:hover {
@@ -158,9 +168,6 @@ nav a:hover {
     padding: 30px 0;
     font-size: 4rem;
     text-align: center;
-}
-
-.banner-1 {
     background-color: var(--fondo-oscuro);
     color: var(--texto-color-suave);
 }
@@ -171,11 +178,12 @@ article {
 
 @media (max-width: 500px) {
     article {
-    padding: 20px 5px;
+    padding: 20px 10px;
     }
 }
 
 section {
+    width: 100%;
     max-width: 800px;
     margin: 40px auto;
 }
@@ -259,8 +267,7 @@ section {
 }
 
 .banner-2 {
-    background-color: var(--fondo-oscuro);
-    color: var(--texto-blanco);
+    color: var(--texto-negro);
 }
 
 .article-2 {
@@ -269,7 +276,7 @@ section {
 }
 
 .article-2 .titulo-parrafo p {
-    color: var(--texto-color-oscuro);
+    color: var(--texto-negro);
 }
 
 .article-2 .bloque {
@@ -310,10 +317,7 @@ section {
 }
 
 .article-4 .titulo-parrafo h2 {
-    color: var(--texto-blanco);
-    background-color: var(--fondo-fuerte);
-    padding: 10px;
-    width: fit-content;
+    color: var(--texto-color-oscuro);
 }
 
 .article-4 .titulo-parrafo p {
@@ -394,23 +398,35 @@ form button:hover {
 footer {
     background-color: var(--fondo-oscuro);
     color: var(--texto-negro);
-    text-align: center;
     padding: 40px 40px 60px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-around;
+    align-items: start;
+    text-align: center;
 }
 
 footer p {
-    margin-bottom: 20px;
+    flex: 300px;
 }
 
-footer .grid {
+footer .footer-flex {
+    flex: 0 1 300px;
+    padding-top: 10px;
     color: var(--texto-blanco);
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    gap: 10px;
     justify-content: center;
-
+    align-items: start;
 }
 
-footer .grid i {
-    margin: 10px;
+footer .footer-flex i {
+    font-size: 1.2rem;
+}
+
+footer .footer-flex i:hover {
+    color: var(--texto-color-oscuro);
 }
